@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+    margin: 0;    
+    padding: 0;
+}
+body{
+    font-weight: 400;
+    font-family: monospace;
+    text-transform: uppercase;
+   // background: rgb(83,176,222);
+//  background: radial-gradient(circle, #5954b9, #36bdd0);
+}
+a {
+    text-decoration: none;
+}
+
+
+
+.teams{
+    li{
+        list-style: none;
+        margin: 20px;
+        .listSave, input{
+            display: none;
+        }
+        &.edit{
+            .listSave, input{
+                display: inline-block;
+            }
+            .listEdit, span{
+                display: none;
+            }
+        }
+        a{
+            padding: 2px 5px;
+            border-radius: 3px;
+        }
+        .listDelete{
+            border: solid 1px #cc0000;
+            color: #cc0000;
+        }
+        .listSave{
+            border: solid 1px #009933;
+            color: #009933;
+        }
+        .listEdit{
+            border: solid 1px #3399ff;
+            color: #3399ff;
+        }
+        span{
+            width: 200px;
+            display: inline-block;
+            font-size: 16px;
+        }
+        input{
+            width: 200px;
+        }
+    }
+}
+.container{
+    display: flex;
+}
+.col{
+    padding: 2em;
+    width:50%;
+    .addColumn{
+       // display: flex;
+    }
+    input{
+        padding: 10px;
+        font-size: 18px;
+    }
+    .addBtn{
+        background: #339966;
+        color: #fff;
+        font-size: 18px;
+        padding: 10px;
+        margin-top: 3em;
+        border-radius: 10px;
+        outline: none;
+        border:none;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+}
+#playerList{
+    margin-top:50px;
+}
+#generate{
+    background: #339966;
+    color: #fff;
+    font-size: 26px;
+    padding: 1em;
+    margin-top: 3em;
+    border-radius: 10px;
+    display: inline-block;
+    &:hover{
+        background: #206040;
+    }
+}
+#fixture{
+    padding: 2em;
+    li{
+        display: block;
+        margin-bottom: 10px;
+        background: #e5d681;
+        transform: skewX(-20deg);
+        text-align: center;
+        
+    }
+    span{
+        font-size: 18px;
+        min-width: 120px;
+        display: inline-block;
+        transform: skewX(20deg);
+        color:#344a3a;
+        padding: 10px;
+    }
+    i{
+        display: inline-block;
+        padding: 15px;
+        background: #d65847;
+        border-radius: 50%;
+        font-style: normal;
+        transform: skewX(20deg);
+    }
+}
